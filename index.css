@@ -1,6 +1,211 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Lucida Grande';
+  font-family: "Lucida Grande";
   font-size: 16px;
+  box-sizing: border-box;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  z-index: 3;
+  background-color: #bfdebf;
+  background-image: url("/images/logo.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right top;
+  height: 40px;
+  width: 100%;
+  position: sticky;
+  top: 0;
+}
+
+.navbar .burger {
+  background-image: url("./images/burger-menu2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left top;
+  margin: 0 5px;
+  height: 50px;
+  width: 50px;
+  position: fixed;
+  top: 0;
+}
+
+.navbar .nav-items {
+  display: none;
+  list-style: none;
+  text-decoration: none;
+}
+
+.navbar.open .nav-items {
+  display: block;
+}
+
+.navbar .nav-items {
+  background-color: #bfdebf;
+  height: 200px;
+  width: 90%;
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+}
+
+.nav-item {
+  color: black;
+  text-decoration: none;
+  font-size: 1.2em;
+  line-height: 2.8em;
+  text-align: center;
+}
+
+.navbar.open .burger {
+  display: none;
+}
+
+.semi-circle {
+  width: 100%;
+  height: 100%;
+  border-radius: 0 0 70% 70%;
+  background-color: #bfdebf;
+  padding: 1px;
+}
+
+.banner-img {
+  background-image: url("/images/banner-img-movile.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  padding: 100px;
+}
+
+h1 {
+  font-size: 2em;
+  letter-spacing: 0.3em;
+  color: white;
+  z-index: 2;
+  position: absolute;
+  top: 8%;
+  width: 100%;
+  text-align: center;
+}
+
+.organic-description {
+  margin: 1em;
+  line-height: 1.3rem;
+}
+
+h2 {
+  text-align: center;
+  line-height: 2.5rem;
+}
+
+.green-box {
+  padding: 1em;
+  line-height: 1.3rem;
+  background-color: #878553;
+  color: white;
+  border-radius: 15%;
+  margin-bottom: 1em;
+}
+
+.green-box div {
+  display: none;
+}
+
+.green-box div h3 {
+  background-image: url("/images/super-healthy-icon.png");
+  background-repeat: no-repeat;
+  background-position: 60%;
+  background-size: contain;
+  margin-bottom: 0.5em;
+  padding: 0.5em 0;
+}
+
+.green-box .active {
+  display: block;
+}
+
+h3 {
+  line-height: 1.5em;
+}
+
+.video {
+  width: 100%;
+}
+
+.form-section {
+  margin: 1em;
+}
+
+.form-section form {
+  width: 100%;
+  margin-top: 1em;
+  padding: 2em;
+  background-image: url("/images/form-background-pc.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.form-section h3 {
+  margin-bottom: 0.5em;
+}
+
+.form-section input,
+textarea {
+  margin: 0.5em -1em;
+  padding: 3%;
+  color: grey;
+  border: none;
+  background-color: white;
+}
+
+.form-section input:last-child {
+  background-color: #878553;
+  color: white;
+  border-radius: 10%;
+  padding: 0.7em 1em;
+  position: relative;
+  right: 0;
+  left: 76%;
+}
+
+footer {
+  background-color: #ede8d7;
+  padding: 1em;
+}
+
+footer ul {
+  text-decoration: none;
+  list-style: none;
+}
+
+footer ul li {
+  line-height: 1.5rem;
+  margin: 1em 0;
+}
+
+footer ul li:first-child {
+  background-image: url("/images/whatsapp-icon.png");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-left: 2em;
+}
+
+footer ul li:nth-child(2) {
+  background-image: url("/images/gmail-icon.png");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-left: 2em;
+}
+
+footer ul li:last-child {
+  background-image: url("/images/google-maps-icon.png");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-left: 2em;
 }
