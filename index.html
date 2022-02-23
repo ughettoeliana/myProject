@@ -12,7 +12,7 @@
       <ul class="nav-items">
         <li><a href="#" class="nav-item">Home</a></li>
         <li><a href="store.html" class="nav-item">Store</a></li>
-        <li><a href="#" class="nav-item">About us</a></li>
+        <li><a href="#form-section" class="nav-item">About us</a></li>
       </ul>
     </nav>
     <h1>ORGANIC</h1>
@@ -70,49 +70,50 @@
     </div>
     <div id="green-box" class="green-box">
       <h2>Why buy organic food?</h2>
-      <div class="active">
-        <h3>Super healthy</h3>
+      <div class="flexbox">
+      <div class="active column">
+        <h3 class="background healthy-icon">Super healthy</h3>
         <p>
           We work day by day so that you can lead your healthy life in a simple
           way, according to your eating style and your pocket.
         </p>
       </div>
-      <div>
-        <h3>Free Shipping</h3>
+      <div class="column">
+        <h3 class="background shipping-icon">Free Shipping</h3>
         <p>Pick up in our market. Shipping scheduled to suit you.</p>
       </div>
-      <div>
-        <h3>Money back guarantee</h3>
+      <div class="column">
+        <h3 class="background garantee-icon">Money back guarantee</h3>
         <p>
           We guarantee you that if you are in any ways insatisfayed by your
           purchase we’ll give you back your money
         </p>
       </div>
-      <div>
-        <h3>100% Natural</h3>
+      <div class="column">
+        <h3 class="background natural-icon">100% Natural</h3>
         <p>
           They have better flavor, color and aroma: Since the methods used in
           their production are natural and do not alter their nutritional
           quality, which allows rediscovering the true taste of unaltered food.
         </p>
       </div>
-      <div>
-        <h3>Premium Quality</h3>
+      <div class="column">
+        <h3 class="background quality-icon">Premium Quality</h3>
         <p>
           They are healthier: Because they are free of toxic residues from
           chemicals, pesticides, fertilizers or synthetic additives. They
           protect the health of the consumer and the farmer.
         </p>
       </div>
-      <div>
-        <h3>Always fresh</h3>
+      <div class="column">
+        <h3 class="background fresh-icon">Always fresh</h3>
         <p>
           Organic food is harvested when ripe and thus fresher and full of
           flavor.
         </p>
       </div>
     </div>
-    <!-- Added a comment -->
+    </div>
     <div>
       <iframe
         src="https://www.youtube.com/embed/UnuP4vrLvc4"
@@ -121,7 +122,7 @@
         allowfullscreen
       class="video"></iframe>
     </div>
-    <div class="form-section">
+    <div id="form-section" class="form-section">
       <h3>¿Do you want to get a DELIVERY every month?</h3>
       <p>
         Send us your information and we’ll send you an email with our offers and
@@ -129,10 +130,10 @@
       </p>
       <div>
         <form action="">
-          <input type="text" value="First name" name="first-name" />
-          <input type="text" value="Last name" name="last-name" />
-          <input type="number" value="Phone number" name="phone-number" />
-          <input type="email" value="email" name="email" />
+          <input type="text" placeholder="First name" name="first-name" />
+          <input type="text" placeholder="Last name" name="last-name" />
+          <input type="number" placeholder="Phone number" name="phone-number" />
+          <input type="email" placeholder="Email" name="email" />
           <textarea name="extra-comment" rows="4">
  Add a comment</textarea
           >
